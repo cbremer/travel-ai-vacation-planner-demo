@@ -4,6 +4,16 @@ A mobile-first React PWA designed to be cloned and adapted to a real trip with a
 
 The included Missouri-and-Tennessee trip is synthetic demonstration data. It shows the kinds of information the app can manage without exposing the private trip that inspired it.
 
+The sanitized template will be hosted as a public demo with GitHub Pages. Personalized copies containing real trip details should stay private and use private hosting such as Tailscale.
+
+## Screenshots
+
+<p align="center">
+  <img src="output/playwright/home-mobile.png" width="260" alt="Mobile trip home showing the countdown and day cards" />
+  <img src="output/playwright/day-mobile.png" width="260" alt="Mobile day detail showing a mission and daily adventures" />
+  <img src="output/playwright/trip-info-mobile.png" width="260" alt="Mobile trip information showing synthetic event and lodging details" />
+</p>
+
 ## The intended workflow
 
 1. Clone this repository into a new private repository.
@@ -80,6 +90,7 @@ The app builds to static files in `dist/`. You can preview it locally, host it n
 
 See [SERVING_AND_PWA.md](SERVING_AND_PWA.md) for:
 
+- Publishing the sanitized template with GitHub Pages
 - Production builds
 - Tailscale Serve setup
 - Updating the running app

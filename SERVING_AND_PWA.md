@@ -2,6 +2,23 @@
 
 This is a static Vite app. A production build writes the application shell and bundled sample data to `dist/`.
 
+## Public demo with GitHub Pages
+
+GitHub Pages is the intended host for this repository's synthetic public demo. A deployment workflow is included at `.github/workflows/deploy-pages.yml` and can be run manually after the repository is ready to be public.
+
+Before the first deployment:
+
+1. Confirm the repository contains synthetic, public-safe information only.
+2. Change the repository visibility to public.
+3. In **Settings → Pages**, select **GitHub Actions** as the source.
+4. Open **Actions → Deploy public demo to GitHub Pages** and choose **Run workflow**.
+5. Confirm the deployed URL resembles `https://YOUR-USER.github.io/REPOSITORY/`.
+6. Test the home page, a day page, Trip Info, Timeline, refresh behavior, and PWA installation.
+
+The project uses relative asset paths and hash routing so it works beneath GitHub Pages' repository subpath. The workflow builds `dist/` and deploys that directory using GitHub's official Pages actions.
+
+Do not use the public Pages deployment for a customized app containing real names, confirmations, contact information, private travel dates, or private lodging details. Use private hosting for that copy.
+
 ## Build and test locally
 
 ```bash

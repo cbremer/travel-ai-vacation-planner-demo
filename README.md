@@ -1,30 +1,60 @@
-# AI Vacation Planner Demo
+# AI Vacation Planner
 
-A mobile-first React PWA showing how a family vacation can be managed as a small, structured operating system: daily plans, maps, reservations, tickets, people, travel notes, a timeline, and a booking checklist.
+A mobile-first React PWA designed to be cloned and adapted to a real trip with a coding agent. Give the agent your itinerary, reservations, destinations, and preferences; the agent reshapes the sample app around your journey.
 
-All people, dates, bookings, contact details, costs, addresses, routes, and confirmation codes in this repository are synthetic. This is a clean-room showcase with fresh Git history; it is not a fork of the private production app.
+The included Missouri-and-Tennessee trip is synthetic demonstration data. It shows the kinds of information the app can manage without exposing the private trip that inspired it.
 
-## What it demonstrates
+## The intended workflow
 
-- A day-by-day mobile itinerary with kid-friendly missions and context
-- Searchable lodging, flight, rental-car, activity, place, and contact information
-- Copyable operational details and quick links
-- A compact timeline, budget, and booking checklist
-- Offline-friendly PWA behavior
-- Structured JSON as the source of truth
+1. Clone this repository into a new private repository.
+2. Open it with your coding agent of choice.
+3. Give the agent your itinerary and supporting trip details.
+4. Ask the agent to replace the demo trip and adapt the interface where your trip needs something different.
+5. Review the app locally, especially dates, links, addresses, times, and reservation details.
+6. Build it and serve it privately to your family—Tailscale is a good option.
+7. Install it on each phone as a PWA.
 
-## AI-assisted workflow
+This is intentionally not a rigid itinerary form. Every trip is shaped differently: a wedding weekend needs event logistics, a road trip needs drive legs, and an international trip may need trains, passports, and time-zone context. A coding agent can preserve the useful foundation while refactoring the data model and UI around the actual journey.
 
-The original project explored a broader workflow using coding assistants for planning and implementation, conversational tools for live itinerary updates, private networking for family access, and generated imagery for kid-friendly trip materials. This repository shares the app pattern without private trip contents or operational infrastructure.
-
-## Run locally
+## Start here
 
 ```bash
+git clone https://github.com/cbremer/travel-ai-vacation-planner-demo.git my-trip-app
+cd my-trip-app
 npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite. To verify a production build:
+Create a new private repository for your customized version before adding personal information. Do not push real trip data back to this template repository.
+
+Then give your agent the itinerary and use the prompt in [CUSTOMIZE_WITH_AN_AGENT.md](CUSTOMIZE_WITH_AN_AGENT.md).
+
+Your source material can be rough. Useful inputs include:
+
+- A pasted itinerary or planning document
+- Travel dates and time zones
+- Flights, trains, rental cars, and drive legs
+- Lodging and check-in instructions
+- Attractions, restaurants, events, and ticket links
+- Addresses and map links
+- Travelers and relevant contact details
+- Booking status, confirmation numbers, and costs
+- Kid-friendly missions, accessibility needs, or daily reminders
+
+Only include sensitive material if you understand where your coding agent sends and stores data. You can also use placeholders first and enter secrets locally later.
+
+## What the agent should customize
+
+The sample data lives in:
+
+- `data/trip.json` — dates, timeline, lodging, flights, bookings, places, budget, checklist, and daily schedule
+- `data/day-guide.json` — daily descriptions, adventures, travel context, people, missions, and reminders
+
+The agent should also inspect the app for assumptions that no longer fit. It may need to change navigation, page labels, featured cards, timeline categories, day artwork, data types, or components. The goal is a small app tailored to the trip, not merely valid JSON.
+
+## Verify before relying on it
+
+Run:
 
 ```bash
 npm run lint
@@ -32,14 +62,47 @@ npm run build
 npm run preview
 ```
 
-## Customize it
+Then review every day on a phone-sized screen and verify important details against primary sources:
 
-Edit `data/trip.json` and `data/day-guide.json`. The TypeScript interfaces in `src/types/` document the expected shape.
+- Dates, local times, and time zones
+- Flight or train numbers
+- Addresses and map destinations
+- Ticket and reservation links
+- Opening hours and closure days
+- Check-in, checkout, and cancellation rules
+- Confirmation numbers and costs
+
+AI can organize these details, but it should not be the final authority for travel-critical information.
+
+## Serve it privately and install the PWA
+
+The app builds to static files in `dist/`. You can preview it locally, host it normally, or expose it privately over your Tailscale network. HTTPS is important for reliable service-worker and installable-PWA behavior.
+
+See [SERVING_AND_PWA.md](SERVING_AND_PWA.md) for:
+
+- Production builds
+- Tailscale Serve setup
+- Updating the running app
+- Installing it on iPhone, iPad, and Android
+- Offline behavior and privacy considerations
+
+## Features included
+
+- Mobile day-by-day itinerary
+- Kid-friendly missions and contextual notes
+- Searchable lodging, flights, rental cars, activities, places, and people
+- Copyable operational details and quick links
+- Timeline, budget, and booking checklist
+- Hash routing that works under a subpath
+- Installable, offline-friendly PWA behavior
+- Structured JSON source of truth
 
 ## Privacy
 
-See [PRIVACY.md](PRIVACY.md) before publishing a customized copy. Never commit real booking codes, private addresses, personal contact information, or a private repository's Git history.
+Keep customized trip repositories private by default. Real trip apps can contain names, phone numbers, home addresses, booking codes, travel dates, costs, and clues that a home is unoccupied.
 
-## Status
+Read [PRIVACY.md](PRIVACY.md) before adding real information or sharing the app outside your private network.
 
-This repository is intentionally private during its verification phase. Repository visibility can be changed only after the synthetic data, rendered UI, tracked files, and Git history have been reviewed.
+## Template provenance
+
+The included data is synthetic and the Git history is separate from the private production app that inspired it. Customized copies should remain private unless their owners deliberately remove or replace all personal trip information.

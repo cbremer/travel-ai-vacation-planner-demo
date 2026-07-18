@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "id": "missouri-tennessee-demo",
+    "title": "Missouri & Tennessee",
+    "subtitle": "A synthetic family road-trip showcase",
+    "startDate": "2027-07-01",
+    "endDate": "2027-07-12",
+    "timezone": "America/Chicago"
+  },
+  "calendar": {
+    "days": ["Jul 1", "Jul 2", "Jul 3", "Jul 4", "Jul 5", "Jul 6", "Jul 7", "Jul 8", "Jul 9", "Jul 10", "Jul 11", "Jul 12"],
+    "dow": ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon"],
+    "weekends": [2, 3, 9, 10]
+  },
+  "gantt": [
+    { "category": "Logistics", "bars": [
+      { "start": 0, "end": 0, "label": "Arrive St. Louis", "sub": "Flight + rental car", "tone": "muted" },
+      { "start": 1, "end": 1, "label": "Gateway Arch", "sub": "Tram + riverfront", "tone": "accent" },
+      { "start": 5, "end": 5, "label": "Drive to Cape Girardeau", "tone": "muted" },
+      { "start": 6, "end": 6, "label": "Drive to Memphis", "sub": "Sikeston lunch stop", "tone": "muted" },
+      { "start": 11, "end": 11, "label": "Fly home", "tone": "muted" }
+    ]},
+    { "category": "Lodging", "bars": [
+      { "start": 0, "end": 0, "label": "Downtown St. Louis hotel", "sub": "Synthetic booking", "tone": "neutral" },
+      { "start": 1, "end": 4, "label": "Saint Charles rental", "sub": "Synthetic booking", "tone": "neutral" },
+      { "start": 5, "end": 5, "label": "Cape Girardeau stay", "sub": "Demo host", "tone": "neutral" },
+      { "start": 6, "end": 10, "label": "Beale Street hotel", "sub": "Synthetic booking", "tone": "neutral" }
+    ]},
+    { "category": "Missouri", "bars": [
+      { "start": 1, "end": 1, "label": "Arch + riverfront", "tone": "neutral" },
+      { "start": 2, "end": 3, "label": "Saint Charles", "tone": "neutral" },
+      { "start": 4, "end": 4, "label": "Family celebration", "tone": "accent" },
+      { "start": 5, "end": 5, "label": "Cape Girardeau", "tone": "neutral" }
+    ]},
+    { "category": "Memphis", "bars": [
+      { "start": 6, "end": 6, "label": "Sun Studio + Beale", "tone": "neutral" },
+      { "start": 7, "end": 7, "label": "Graceland", "tone": "accent" },
+      { "start": 8, "end": 8, "label": "Civil Rights history", "tone": "neutral" },
+      { "start": 9, "end": 10, "label": "Music + riverfront", "tone": "neutral" }
+    ]}
+  ],
+  "checklist": [
+    { "id": "flights", "content": "Book sample flights", "status": "completed" },
+    { "id": "lodging", "content": "Reserve sample lodging", "status": "completed" },
+    { "id": "arch", "content": "Reserve Gateway Arch tickets", "status": "completed" },
+    { "id": "graceland", "content": "Reserve Graceland tour", "status": "completed" },
+    { "id": "restaurants", "content": "Choose two Memphis dinner options", "status": "pending" }
+  ],
+  "budget": {
+    "paid": [
+      { "label": "Flights", "amount": 1200, "display": "$1,200", "tone": "success" },
+      { "label": "Lodging", "amount": 2100, "display": "$2,100", "tone": "success" },
+      { "label": "Tickets", "amount": 500, "display": "$500", "tone": "success" }
+    ],
+    "estimated": [
+      { "label": "Food", "amount": 900, "display": "$900", "tone": "warning" },
+      { "label": "Fuel", "amount": 250, "display": "$250", "tone": "warning" },
+      { "label": "Demo total", "amount": 4950, "display": "$4,950", "tone": "info" }
+    ],
+    "totalPaid": 3800,
+    "totalPaidDisplay": "$3,800",
+    "notes": ["All figures are invented for demonstration.", "No real receipts or payments are represented.", "Estimates are synthetic."]
+  },
+  "places": [
+    { "id": "stl-hotel", "label": "Downtown St. Louis Hotel (Demo)", "address": "100 Market Street, St. Louis, MO 63101", "mapUrl": "https://www.openstreetmap.org/search?query=Gateway%20Arch%20St%20Louis" },
+    { "id": "saint-charles-stay", "label": "Saint Charles Vacation Rental (Demo)", "address": "100 Main Street, Saint Charles, MO 63301", "mapUrl": "https://www.openstreetmap.org/search?query=Main%20Street%20Saint%20Charles%20MO" },
+    { "id": "celebration", "label": "Family Celebration Venue (Demo)", "address": "100 Celebration Way, Cottleville, MO 63304", "mapUrl": "https://www.openstreetmap.org/search?query=Cottleville%20MO" },
+    { "id": "cape-stay", "label": "Cape Girardeau Stay (Demo)", "address": "100 Broadway Street, Cape Girardeau, MO 63701", "mapUrl": "https://www.openstreetmap.org/search?query=Cape%20Girardeau%20MO" },
+    { "id": "memphis-hotel", "label": "Beale Street Hotel (Demo)", "address": "100 Beale Street, Memphis, TN 38103", "mapUrl": "https://www.openstreetmap.org/search?query=Beale%20Street%20Memphis" },
+    { "id": "arch", "label": "Gateway Arch National Park", "address": "11 North 4th Street, St. Louis, MO 63102", "url": "https://www.nps.gov/jeff/", "mapUrl": "https://www.openstreetmap.org/search?query=Gateway%20Arch" },
+    { "id": "sun-studio", "label": "Sun Studio", "address": "706 Union Avenue, Memphis, TN 38103", "url": "https://www.sunstudio.com/", "mapUrl": "https://www.openstreetmap.org/search?query=Sun%20Studio%20Memphis" },
+    { "id": "graceland", "label": "Graceland", "address": "3764 Elvis Presley Boulevard, Memphis, TN 38116", "url": "https://www.graceland.com/", "mapUrl": "https://www.openstreetmap.org/search?query=Graceland%20Memphis" },
+    { "id": "civil-rights", "label": "National Civil Rights Museum", "address": "450 Mulberry Street, Memphis, TN 38103", "url": "https://www.civilrightsmuseum.org/", "mapUrl": "https://www.openstreetmap.org/search?query=National%20Civil%20Rights%20Museum" },
+    { "id": "stax", "label": "Stax Museum of American Soul Music", "address": "926 East McLemore Avenue, Memphis, TN 38106", "url": "https://staxmuseum.com/", "mapUrl": "https://www.openstreetmap.org/search?query=Stax%20Museum" }
+  ],
+  "flights": [
+    { "id": "outbound", "label": "Outbound demo flight", "confirmation": "DEMO01", "date": "2027-07-01", "passengers": "Demo Family", "cost": 700, "costDisplay": "$700", "legs": [{ "flight": "WN 123", "from": "SMF", "to": "STL", "departs": "12:00 PM", "arrives": "5:30 PM" }], "notes": "Synthetic flight details only." },
+    { "id": "return", "label": "Return demo flight", "confirmation": "DEMO02", "date": "2027-07-12", "passengers": "Demo Family", "cost": 500, "costDisplay": "$500", "legs": [{ "flight": "WN 456", "from": "MEM", "to": "SMF", "departs": "1:00 PM", "arrives": "5:00 PM" }], "notes": "Synthetic flight details only." }
+  ],
+  "bookings": [
+    { "id": "stl-demo", "item": "Downtown St. Louis hotel", "group": "stays", "confirmation": "HOTEL-DEMO-1", "cost": 250, "costDisplay": "$250", "status": "booked", "placeId": "stl-hotel", "notes": "Synthetic lodging record." },
+    { "id": "rental-demo", "item": "Saint Charles vacation rental", "group": "stays", "confirmation": "STAY-DEMO-2", "cost": 1000, "costDisplay": "$1,000", "status": "booked", "placeId": "saint-charles-stay", "notes": "Synthetic lodging record." },
+    { "id": "cape-demo", "item": "Cape Girardeau stay", "group": "stays", "status": "booked", "placeId": "cape-stay", "notes": "Fictional host and address." },
+    { "id": "memphis-demo", "item": "Beale Street hotel", "group": "stays", "confirmation": "HOTEL-DEMO-3", "cost": 850, "costDisplay": "$850", "status": "booked", "placeId": "memphis-hotel", "notes": "Synthetic lodging record." },
+    { "id": "car-demo", "item": "Rental SUV", "group": "car", "confirmation": "CAR-DEMO-1", "cost": 650, "costDisplay": "$650", "status": "booked", "notes": "Pick up in St. Louis; return in Memphis." },
+    { "id": "flight-out-demo", "item": "Outbound flight", "group": "flights", "confirmation": "DEMO01", "cost": 700, "costDisplay": "$700", "status": "booked" },
+    { "id": "flight-home-demo", "item": "Return flight", "group": "flights", "confirmation": "DEMO02", "cost": 500, "costDisplay": "$500", "status": "booked" },
+    { "id": "arch-demo", "item": "Gateway Arch tram", "group": "activities", "confirmation": "ARCH-DEMO", "cost": 120, "costDisplay": "$120", "status": "booked", "placeId": "arch", "url": "https://www.gatewayarch.com/" },
+    { "id": "graceland-demo", "item": "Graceland tour", "group": "activities", "confirmation": "ELVIS-DEMO", "cost": 280, "costDisplay": "$280", "status": "booked", "placeId": "graceland", "url": "https://www.graceland.com/" }
+  ],
+  "days": [
+    { "index": 0, "date": "July 1", "isoDate": "2027-07-01", "label": "Jul 1", "dow": "Thu", "title": "Arrive in St. Louis", "lodging": "Downtown St. Louis hotel", "lodgingBookingId": "stl-demo", "summary": "Land, collect the rental car, and settle in near the riverfront.", "items": ["Fly to STL", "Pick up rental SUV", "Hotel check-in"] },
+    { "index": 1, "date": "July 2", "isoDate": "2027-07-02", "label": "Jul 2", "dow": "Fri", "title": "Gateway Arch & Riverfront", "lodging": "Saint Charles vacation rental", "lodgingBookingId": "rental-demo", "summary": "Arch tram, museum, and Mississippi riverfront.", "items": ["Gateway Arch", "Riverfront walk", "Drive to Saint Charles"], "actions": [{ "kind": "web", "label": "Gateway Arch information", "href": "https://www.nps.gov/jeff/" }] },
+    { "index": 2, "date": "July 3", "isoDate": "2027-07-03", "label": "Jul 3", "dow": "Sat", "title": "Historic Saint Charles", "lodging": "Saint Charles vacation rental", "lodgingBookingId": "rental-demo", "summary": "Explore Main Street and the Missouri River history.", "items": ["Historic Main Street", "Lewis & Clark history", "Family dinner"] },
+    { "index": 3, "date": "July 4", "isoDate": "2027-07-04", "label": "Jul 4", "dow": "Sun", "title": "A Relaxed Fourth", "lodging": "Saint Charles vacation rental", "lodgingBookingId": "rental-demo", "summary": "A slower day with riverfront time and fireworks.", "items": ["Morning riverwalk", "Rest", "Local fireworks"] },
+    { "index": 4, "date": "July 5", "isoDate": "2027-07-05", "label": "Jul 5", "dow": "Mon", "title": "Family Celebration", "lodging": "Saint Charles vacation rental", "lodgingBookingId": "rental-demo", "summary": "A fictional family gathering in Cottleville.", "items": ["Get ready", "Family celebration", "Lunch reception"], "actions": [{ "kind": "map", "label": "Open Cottleville map", "href": "https://www.openstreetmap.org/search?query=Cottleville%20MO" }] },
+    { "index": 5, "date": "July 6", "isoDate": "2027-07-06", "label": "Jul 6", "dow": "Tue", "title": "Cape Girardeau", "lodging": "Cape Girardeau stay", "lodgingBookingId": "cape-demo", "summary": "Drive south and explore the Mississippi riverfront murals.", "items": ["Drive I-55 south", "Riverfront murals", "Dinner downtown"] },
+    { "index": 6, "date": "July 7", "isoDate": "2027-07-07", "label": "Jul 7", "dow": "Wed", "title": "Sun Studio & Beale Street", "lodging": "Beale Street hotel", "lodgingBookingId": "memphis-demo", "summary": "Stop in Sikeston, tour Sun Studio, and hear music on Beale Street.", "items": ["Drive to Memphis", "Sikeston lunch", "Sun Studio", "Beale Street"], "actions": [{ "kind": "web", "label": "Sun Studio", "href": "https://www.sunstudio.com/" }] },
+    { "index": 7, "date": "July 8", "isoDate": "2027-07-08", "label": "Jul 8", "dow": "Thu", "title": "Graceland", "lodging": "Beale Street hotel", "lodgingBookingId": "memphis-demo", "summary": "Spend the morning exploring Graceland and its exhibits.", "items": ["Graceland tour", "Car museum", "Memphis BBQ"], "actions": [{ "kind": "web", "label": "Graceland visitor information", "href": "https://www.graceland.com/" }] },
+    { "index": 8, "date": "July 9", "isoDate": "2027-07-09", "label": "Jul 9", "dow": "Fri", "title": "Civil Rights History", "lodging": "Beale Street hotel", "lodgingBookingId": "memphis-demo", "summary": "Visit the National Civil Rights Museum and nearby historic sites.", "items": ["National Civil Rights Museum", "I AM A MAN Plaza", "Downtown walk"], "actions": [{ "kind": "web", "label": "Museum information", "href": "https://www.civilrightsmuseum.org/" }] },
+    { "index": 9, "date": "July 10", "isoDate": "2027-07-10", "label": "Jul 10", "dow": "Sat", "title": "Soul Music & Midtown", "lodging": "Beale Street hotel", "lodgingBookingId": "memphis-demo", "summary": "Explore Stax, Midtown, and another side of Memphis music.", "items": ["Stax Museum", "Midtown lunch", "Evening music"], "actions": [{ "kind": "web", "label": "Stax Museum", "href": "https://staxmuseum.com/" }] },
+    { "index": 10, "date": "July 11", "isoDate": "2027-07-11", "label": "Jul 11", "dow": "Sun", "title": "Memphis Riverfront", "lodging": "Beale Street hotel", "lodgingBookingId": "memphis-demo", "summary": "A flexible final day around the riverfront and downtown.", "items": ["Peabody ducks", "Mud Island", "Final dinner"] },
+    { "index": 11, "date": "July 12", "isoDate": "2027-07-12", "label": "Jul 12", "dow": "Mon", "title": "Travel Home", "lodging": "Home", "summary": "Return the car and fly home.", "items": ["Hotel checkout", "Return rental car", "Fly home"] }
+  ],
+  "jul2Arch": {
+    "orderId": "ARCH-DEMO",
+    "cost": 120,
+    "costDisplay": "$120",
+    "ticketUrl": "https://www.gatewayarch.com/",
+    "slots": [{ "time": "10:30 AM", "activity": "Sample tram reservation" }],
+    "logistics": ["Synthetic ticket record."],
+    "policies": ["Verify current venue policies on the official website."]
+  },
+  "airbnbCheckout": { "title": "Sample checkout checklist", "items": ["Pack personal items", "Load the car", "Check doors and windows", "Follow host instructions"] }
+}

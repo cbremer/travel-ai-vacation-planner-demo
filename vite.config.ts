@@ -22,6 +22,10 @@ function tripDataAssets(): Plugin {
 
 export default defineConfig({
   base: './',
+  build: {
+    outDir: 'dist/app',
+    emptyOutDir: true,
+  },
   plugins: [
     react(),
     tripDataAssets(),

@@ -4,7 +4,7 @@ This is a static Vite app. A production build writes the application shell and b
 
 ## Public demo with GitHub Pages
 
-GitHub Pages is the intended host for this repository's synthetic public demo. A deployment workflow is included at `.github/workflows/deploy-pages.yml` and can be run manually after the repository is ready to be public.
+GitHub Pages is the intended host for this repository's public project site and synthetic demo. The project homepage is built at the site root and the interactive PWA is built under `/app/`. A deployment workflow is included at `.github/workflows/deploy-pages.yml` and can be run manually after the repository is ready to be public.
 
 Before the first deployment:
 

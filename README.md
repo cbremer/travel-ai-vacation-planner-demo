@@ -4,7 +4,7 @@ A mobile-first React PWA designed to be cloned and adapted to a real trip with a
 
 The included Missouri-and-Tennessee trip is synthetic demonstration data. It shows the kinds of information the app can manage without exposing the private trip that inspired it.
 
-The sanitized template will be hosted as a public demo with GitHub Pages. Personalized copies containing real trip details should stay private and use private hosting such as Tailscale.
+The sanitized template will be hosted as a public project site with GitHub Pages. Its homepage explains the project, the interactive demo lives at `/app/`, and every layer links back to the public repository. Personalized copies containing real trip details should stay private and use private hosting such as Tailscale.
 
 ## Screenshots
 

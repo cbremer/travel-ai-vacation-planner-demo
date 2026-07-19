@@ -22,10 +22,15 @@ function Layout() {
             <span aria-hidden>←</span> Home
           </NavLink>
         )}
-        <div className="app-bar-title">
-          {onDay ? 'Day details' : 'Demo Trip'}
+        <div className="app-bar-heading">
+          <div className="app-bar-title">
+            {onDay ? 'Day details' : 'Demo Trip'}
+          </div>
+          {!onDay && <div className="app-bar-sub">Synthetic showcase data</div>}
         </div>
-        {!onDay && <div className="app-bar-sub">Synthetic showcase data</div>}
+        <a className="app-bar-project" href="../">
+          Project home <span aria-hidden>↗</span>
+        </a>
       </header>
 
       <main className="app-main">

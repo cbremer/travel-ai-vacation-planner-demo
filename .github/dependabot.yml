@@ -4,10 +4,6 @@ updates:
     directory: /
     schedule:
       interval: weekly
-    open-pull-requests-limit: 5
-
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: weekly
-    open-pull-requests-limit: 5
+    # Keep security alerts and security updates enabled in repository settings,
+    # but do not open routine version-update pull requests.
+    open-pull-requests-limit: 0

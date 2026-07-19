@@ -2,7 +2,7 @@
   "overview": {
     "tagline": "Missouri landmarks → Memphis music and history",
     "subtitle": "Twelve days of public destinations with synthetic personal details.",
-    "route": "Sacramento → St. Louis → Saint Charles → Cape Girardeau → Memphis → home",
+    "route": "NorCal → St. Louis → Saint Charles → Cape Girardeau → Memphis → home",
     "cities": ["St. Louis", "Saint Charles", "Cottleville", "Cape Girardeau", "Memphis"]
   },
   "people": [

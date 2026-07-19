@@ -74,8 +74,8 @@
     { "id": "stax", "label": "Stax Museum of American Soul Music", "address": "926 East McLemore Avenue, Memphis, TN 38106", "url": "https://staxmuseum.com/", "mapUrl": "https://www.openstreetmap.org/search?query=Stax%20Museum" }
   ],
   "flights": [
-    { "id": "outbound", "label": "Outbound demo flight", "confirmation": "DEMO01", "date": "2027-07-01", "passengers": "Demo Family", "cost": 700, "costDisplay": "$700", "legs": [{ "flight": "WN 123", "from": "SMF", "to": "STL", "departs": "12:00 PM", "arrives": "5:30 PM" }], "notes": "Synthetic flight details only." },
-    { "id": "return", "label": "Return demo flight", "confirmation": "DEMO02", "date": "2027-07-12", "passengers": "Demo Family", "cost": 500, "costDisplay": "$500", "legs": [{ "flight": "WN 456", "from": "MEM", "to": "SMF", "departs": "1:00 PM", "arrives": "5:00 PM" }], "notes": "Synthetic flight details only." }
+    { "id": "outbound", "label": "Outbound demo flight", "confirmation": "DEMO01", "date": "2027-07-01", "passengers": "Demo Family", "cost": 700, "costDisplay": "$700", "legs": [{ "flight": "WN 123", "from": "NorCal", "to": "STL", "departs": "12:00 PM", "arrives": "5:30 PM" }], "notes": "Synthetic flight details only." },
+    { "id": "return", "label": "Return demo flight", "confirmation": "DEMO02", "date": "2027-07-12", "passengers": "Demo Family", "cost": 500, "costDisplay": "$500", "legs": [{ "flight": "WN 456", "from": "MEM", "to": "NorCal", "departs": "1:00 PM", "arrives": "5:00 PM" }], "notes": "Synthetic flight details only." }
   ],
   "bookings": [
     { "id": "stl-demo", "item": "Downtown St. Louis hotel", "group": "stays", "confirmation": "HOTEL-DEMO-1", "cost": 250, "costDisplay": "$250", "status": "booked", "placeId": "stl-hotel", "notes": "Synthetic lodging record." },

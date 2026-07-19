@@ -27,7 +27,6 @@ const AIRPORT_NAMES: Record<string, string> = {
   AGS: 'Augusta Regional Airport',
   ATL: 'Hartsfield-Jackson Atlanta International Airport',
   MEM: 'Memphis International Airport',
-  SMF: 'Sacramento International Airport',
   STL: 'St. Louis Lambert International Airport',
 }
 

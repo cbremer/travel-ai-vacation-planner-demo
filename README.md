@@ -117,3 +117,7 @@ Read [PRIVACY.md](PRIVACY.md) before adding real information or sharing the app 
 ## Template provenance
 
 The included data is synthetic and the Git history is separate from the private production app that inspired it. Customized copies should remain private unless their owners deliberately remove or replace all personal trip information.
+
+## License
+
+This project is available under the [MIT License](LICENSE).
